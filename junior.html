@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="custom.css">
+
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+    <style>
+        #font {
+            color: gray;
+            font-size: 30px;
+        }
+        
+        p {
+            font-size: 18px;
+        }
+        
+        body {
+            background-color: white;
+        }
+    </style>
+</head>
+<script>
+    function collapseNavbar() {
+        if ($(".navbar").offset().top > 50) {
+            $(".navbar-fixed-top").addClass("top-nav-collapse");
+        }
+        else {
+            $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        }
+    }
+
+    $(window).scroll(collapseNavbar);
+    $(document).ready(collapseNavbar);
+
+
+    // Closes the Responsive Menu on Menu Item Click
+    $('.navbar-collapse ul li a').click(function() {
+        if ($(this).attr('class') != 'dropdown-toggle active' && $(this).attr('class') != 'dropdown-toggle') {
+            $('.navbar-toggle:visible').click();
+        }
+    });
+
+    $(window).scroll(function() {
+        $(".slideanim").each(function() {
+            var pos = $(this).offset().top;
+
+            var winTop = $(window).scrollTop();
+            if (pos < winTop + 600) {
+                $(this).addClass("slide");
+            }
+        });
+    });
+</script>
+
+<body id="page-top" class="index">
+
+
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                    <br>
+                    <a class="navbar-brand" href="#page-top" id="font">HSTAT College Office</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="index.1.html">Home</a>
+                        </li>
+                        <!--//-->
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Pages <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="senior.html">Senior</a></li>
+                                <li><a href="junior.html">Junior</a></li>
+                                <li><a href="teacher.html">Teacher</a></li>
+                                <li><a href="alumni.html">Alumni</a></li>
+                                <li><a href="questions.html">Question</a></li>
+                                <li><a href="financial_aid.html">Finacnial Aid</a></li>
+                            </ul>
+                        </li>
+
+                        <!--//    -->
+                        <li>
+                            <a class="page-scroll" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <header>
+            <h2>Junior</h2>
+            <p class="item-intro text-muted">Here's how to prepare to college.</p>
+        </header>
+
+
+
+        <div class="container">
+            <div class="informaiton1">
+                <p class="infor">
+                    1. Sign up for the ACTs, SATs, and SAT IIs. Check in with Maureen in 104 to see if you qualify for a fee waiver <br><mark>The College Board</mark> Make an account and sign up for the SATs and SATII <br><mark>ACT Test Website</mark> Make an account and sign up for the the ACTs<br><br>
+                    2. Research CUNY Schools<br> <mark>CUNY Admissions Profile</mark> (provides the mean GPA and SAT scores at CUNY colleges) More info on CUNY <mark>here</mark>! <br><br>
+                    3. Research SUNY Schools<br> <mark>SUNY Admissions Profile</mark> (also check out the admissions profiles for SUNY's <mark>EOP</mark> and <mark>Community College</mark> applicants) <br><mark>SUNY Program Search</mark> Check to see which SUNY campuses have the major you are interested in!<br><br> 
+                    4. Research "Other" Schools<br> <mark>College Search Step-by-Step Website</mark> were they ask you questions and then generate a list of schools for you to research <br><br>
+                    5. <mark>Apply for a FSA ID</mark><br> All students who are citizens or perminent residents of the US should apply for a FSA ID in order to start their Financial Aid process.<br><br>
+                    
+                   MORE LINKS AND INFO:<br>
+                   <mark> NYC College Line</mark> is a great website with hand-picked resources for getting into, paying for, and staying in college...and they have a Blog<br>
+                    <mark>The Common Application</mark> accepted by many top colleges and universities and a great college research tool<br> 
+                    <mark>The Common Black Application</mark> accepted by many of the Historically Black Colleges <br>
+                    <mark>Unigo</mark> Everybody's talking about it. The college search website made by students for students. List of the most economically diverse colleges <br>
+                    <mark>www.VESID.nysed.gov</mark> Academic and vocational opportunities for students with IEP's <br>
+                    <mark>US News and World Report</mark> School Rankings and Guides <br>
+                    Here is a calendar to keep you on track and up to date (Click +GoogleCalendar to add it to your own Google Calendar):
+
+                </p>
+            </div>
+
+        </div>
+        <br>
+        <br>
+        <footer class="container-fluid text-center" id="contact">
+            <div class="footer-col col-md-6">
+                <h3>Location</h3>
+                <p>350 67th St
+                    <br>Brooklyn, New York 11220</p>
+            </div>
+            <div class="footer-col col-md-6">
+                <h3>Contact</h3>
+                <a href="http://hstat.org">HSTAT School Webpage</a>
+                <p>Phone: (718) 759-3400</p>
+            </div>
+        </footer>
+
+
+
+
+    </body>
+
+</html>

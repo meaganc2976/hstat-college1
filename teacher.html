@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="custom.css">
+
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kreon" rel="stylesheet">
+    <style>
+        #font {
+            color: gray;
+            font-size: 30px;
+        }
+        
+        p {
+            font-size: 18px;
+        }
+        
+        body {
+            background-color: white;
+        }
+        
+    </style>
+</head>
+<script>
+    function collapseNavbar() {
+        if ($(".navbar").offset().top > 50) {
+            $(".navbar-fixed-top").addClass("top-nav-collapse");
+        }
+        else {
+            $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        }
+    }
+
+    $(window).scroll(collapseNavbar);
+    $(document).ready(collapseNavbar);
+
+
+    // Closes the Responsive Menu on Menu Item Click
+    $('.navbar-collapse ul li a').click(function() {
+        if ($(this).attr('class') != 'dropdown-toggle active' && $(this).attr('class') != 'dropdown-toggle') {
+            $('.navbar-toggle:visible').click();
+        }
+    });
+
+    $(window).scroll(function() {
+        $(".slideanim").each(function() {
+            var pos = $(this).offset().top;
+
+            var winTop = $(window).scrollTop();
+            if (pos < winTop + 600) {
+                $(this).addClass("slide");
+            }
+        });
+    });
+</script>
+
+<body id="page-top" class="index">
+
+
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                    <br>
+                    <a class="navbar-brand" href="#page-top" id="font">HSTAT College Office</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="index.1.html">Home</a>
+                        </li>
+                        <!--//-->
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Pages <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="senior.html">Senior</a></li>
+                                <li><a href="junior.html">Junior</a></li>
+                                <li><a href="teacher.html">Teacher</a></li>
+                                <li><a href="alumni.html">Alumni</a></li>
+                                <li><a href="questions.html">Question</a></li>
+                                <li><a href="financial_aid.html">Finacnial Aid</a></li>
+                            </ul>
+                        </li>
+
+                        <!--//    -->
+                        <li>
+                            <a class="page-scroll" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <header>
+            <h2>TEACHERS</h2>
+            <p class="item-intro text-muted">Thank you so much for supporting our students on their journey to college!</p>
+        </header>
+
+<br>
+
+        <div class="container">
+            <div class="informaiton1">
+                <h2 class="intro-text">Writing a teacher recomendation?</h2>
+                <hr>
+                <p class="infor">
+                    Our students are given teacher recommendation forms in the spring of their Junior year (and then again in the fall of their Senior year) and are given the responsibility of asking 2 of their Junior year teachers to commit to writing them letters of recommendation.
+                    The forms, once filled out, should be returned to Kitty in room 114 in order for the college office to keep a record of who is writing a letter for who. <br><br>
+                    Here are some links to help support you in the recommendation writing process:<br><br>
+                    1. Note to Applicants: Admissions Officers Do Read What Your Teachers Say <br><br>
+                    2. The Art of the College Recommendation Letter<br><br><br><br>
+
+
+                </p>
+            </div>
+
+        </div>
+        <br>
+        <br>
+        <footer class="container-fluid text-center" id="contact">
+            <div class="footer-col col-md-6">
+                <h3>Location</h3>
+                <p>350 67th St
+                    <br>Brooklyn, New York 11220</p>
+            </div>
+            <div class="footer-col col-md-6">
+                <h3>Contact</h3>
+                <a href="http://hstat.org">HSTAT School Webpage</a>
+                <p>Phone: (718) 759-3400</p>
+            </div>
+        </footer>
+
+
+
+
+    </body>
+
+</html>

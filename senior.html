@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="custom.css">
+
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+    <style>
+        #font {
+            color: gray;
+            font-size: 30px;
+        }
+        
+        p {
+            font-size: 18px;
+        }
+        
+        body {
+            background-color: white;
+        }
+    </style>
+</head>
+<script>
+    function collapseNavbar() {
+        if ($(".navbar").offset().top > 50) {
+            $(".navbar-fixed-top").addClass("top-nav-collapse");
+        }
+        else {
+            $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        }
+    }
+
+    $(window).scroll(collapseNavbar);
+    $(document).ready(collapseNavbar);
+
+
+    // Closes the Responsive Menu on Menu Item Click
+    $('.navbar-collapse ul li a').click(function() {
+        if ($(this).attr('class') != 'dropdown-toggle active' && $(this).attr('class') != 'dropdown-toggle') {
+            $('.navbar-toggle:visible').click();
+        }
+    });
+
+    $(window).scroll(function() {
+        $(".slideanim").each(function() {
+            var pos = $(this).offset().top;
+
+            var winTop = $(window).scrollTop();
+            if (pos < winTop + 600) {
+                $(this).addClass("slide");
+            }
+        });
+    });
+</script>
+
+<body id="page-top" class="index">
+
+
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                    <br>
+                    <a class="navbar-brand" href="#page-top" id="font">HSTAT College Office</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="index.1.html">Home</a>
+                        </li>
+                        <!--//-->
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Pages <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="senior.html">Senior</a></li>
+                                <li><a href="junior.html">Junior</a></li>
+                                <li><a href="teacher.html">Teacher</a></li>
+                                <li><a href="alumni.html">Alumni</a></li>
+                                <li><a href="questions.html">Question</a></li>
+                                <li><a href="financial_aid.html">Finacnial Aid</a></li>
+                            </ul>
+                        </li>
+
+                        <!--//    -->
+                        <li>
+                            <a class="page-scroll" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+      
+<header>
+        <h2>Senior</h2>
+            <p class="item-intro text-muted">Here's how to apply to college.</p>
+</header>
+
+
+        
+         <div class="container">
+          <div class="informaiton1">
+                <p class="infor">
+                    Remember, you are applying as an <mark>undergraduate freshman</mark>.<br> <br>
+                    1. Create a professional email account. Do not use addresses such as gangboy911@aol.com, sexygirl86@yahoo.com, etc. Remember to be professional in all of your communication with colleges. For more information on email etiquette click <mark>here</mark>. <br><br>
+                    2. Create accounts on the <mark>College Board</mark> and <mark>ACT</mark> websites. Sign up for the SAT, SAT Subject Tests and the ACT. * Fee waivers available for eligible students in room 104. For more information on the SAT click <mark>here</mark>. For more information on the ACT click <mark>here</mark>. To learn about the difference between the SAT and ACT click <mark>here</mark>. For free SAT/ACT prep click <mark>here</mark>. <br><br>
+                    3. Ask for 2 teacher recommendations.
+                    If a college asks for the e-mail address for your teacher who is writing an academic recommendation, use their @hstat.org account. It is the first initial and last name of the teacher. For example, Denise Basso is DBasso@hstat.org.<br><br>
+                    4. Forms will ask for your counselor and school address and phone numbers, you can find them here: <mark>Our School Info</mark> <br><br>
+                    5. The best way to research schools is to visit them or speak with an admissions officer. See the calendar below for
+                    a schedule of open houses, college trips and admissions officers' visits to HSTAT. Click <mark>here</mark> to learn how to apply to fly in programs where schools will cover your travel expences in order to visit their campus! <br><br>
+                    6. The White House
+                    has created a great website with lots of data about colleges. Check out <mark>"College Scorecard."</mark> <br><br>
+                    7. Do a college search on the <mark>College Board website's "Big Future"</mark>. Research the recommendations made by the College Board College Search.<br><br>
+                    8. <mark>Research CUNY schools</mark>. <mark>Review CUNY Admissions Profile</mark> (provides the mean GPA SAT scores at CUNY colleges.) For specific guidelines on applying to CUNY click <mark>here</mark>. <br><br>
+                    9. <mark>Research SUNY schools</mark>. Review <mark>SUNY Admissions Profile</mark> (also check
+                    out the admissions profiles for <mark>SUNY's EOP</mark> and <mark>Community College</mark> applicants). The SUNY application can be confusing. Click <mark>here</mark> to learn more about applying to SUNY. <br><br>
+                    10. Research College Access and Opportunity Programs: <br>CUNY : SEEK/CD<br>
+                    SUNY : EOP <br>Private New York State Colleges: <mark>HEOP</mark> <br><br>
+                    11. If you are applying to colleges that use the Common App, create an account with the Common Application: <mark>commonapp.org</mark> Click here for an <mark>application tutorial</mark> and other FAQs. Do an
+                    Advanced Search on the Common App website. Research the recommendations made by the Common App Advanced Search. <br><br>
+                    12. Research Historically Black Colleges on the <mark>Common Black College Application</mark>. <br><br>
+                    13. Visit <mark>Unigo</mark> the college search website
+                    for students by students. <br><br>
+                    14. <mark>Check out</mark> this article (and list) about colleges that show a commitment to ecominic diversity. <br><br>
+                    15. Many schools require that you submit a personal statement with your application. <mark>Click here</mark> for more informaiton
+                    on writing your college essay. <br><br>
+                    16. What do I put in those darn college application envelopes?? Familiarize yourself with the procedure for submitting your applications. Click <mark>here</mark> for an explanation. Fill out and paperclip <mark>a checklist</mark>
+                    to each envelope. <br><br>
+                    17. Consider whether or not to apply Early Decision or Early Action. Click <mark>here</mark> for information. <br><br>
+                    18. Click <mark>here</mark> for links and information to help you with the college application process. <br><br>
+                    19. Click <mark>here</mark> for a list of scholarships.  Click <mark>here</mark> for a specific scholarship opportunity available to undocumented students.<br><br>
+                    20. Click <mark>here</mark> for information on financial aid.<br><br>
+                    21. You've been accepted to several schools? Now you need help deciding on which college to attend. Check out <mark>College Pick</mark>.<br><br>
+                    22. Here is a calendar to
+                    keep you on track and up to date (Click +GoogleCalendar to add it to your own Google Calendar):<br>
+    <center><iframe frameborder="0" height="600" scrolling="no" src="https://www.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=5378oui6l9abhspdqiu361hmm0%40group.calendar.google.com&amp;color=%23AB8B00&amp;ctz=America%2FNew_York" style=" border-width:0 " width="800"></iframe></center>
+                    <br><br>
+                    
+                </p>
+            </div>
+
+</div>
+<br>
+<br>
+      <footer  class="container-fluid text-center" id="contact">
+            <div class="footer-col col-md-6">
+                <h3>Location</h3>
+                <p>350 67th St
+                    <br>Brooklyn, New York 11220</p>
+            </div>
+            <div class="footer-col col-md-6">
+                <h3>Contact</h3>
+                <a href="http://hstat.org">HSTAT School Webpage</a>
+                <p>Phone: (718) 759-3400</p>
+            </div>
+        </footer>
+
+
+
+
+    </body>
+
+</html>
+
+
+
+
+
+
+
+
+

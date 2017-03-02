@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="custom.css">
+    <style>
+    #font{
+        color:#FFCC33;
+        font-size:30px;
+    }
+    p{
+        font-size:18px;
+    }
+    #portfolio .portfolio-item {
+  margin: 0 0 15px;
+  right: 0;
+}
+#portfolio .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+#portfolio .portfolio-item .portfolio-link .caption {
+  background: rgba(24, 188, 156, 0.9);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+#portfolio .portfolio-item .portfolio-link .caption:hover {
+  opacity: 1;
+}
+#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: white;
+}
+#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+  margin-top: -12px;
+}
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+  margin: 0;
+}
+#portfolio * {
+  z-index: 2;
+}
+@media (min-width: 767px) {
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
+}
+    
+</style>
+</head>
+
+<body id="page-top" class="index">
+
+     <!--Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+             <!--Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top" id="font">HSTAT College Office</a>
+            </div>
+
+             <!--Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Pages <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="senior.html">Senior</a></li>
+                            <li><a href="junior.html">Junior</a></li>
+                            <li><a href="teachers.html">Teacher</a></li>
+                            <li><a href="alumni.html">Alumni</a></li>
+                            <li><a href="questions.html">Question</a></li>
+                            <li><a href="financial_aids.html">Finacnial Aid</a></li>
+                        </ul>
+                    </li>
+                    </li>
+
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    
+   
+    
+    
+   <header id="home_img">
+        <div class="header-content">
+            <div class="header-content-inner">
+                <div class="container text-center">
+                    <h1>College Starts Here</h1>
+                   
+                </div>
+            </div>
+        </div>
+
+    </header>
+    
+ 
+    
+    <!--     <div class="container-fluid bg-3 text-center" id="middle">-->
+        <!--<br>-->
+        <!--<h2>Pages</h2>-->
+        <!--<br>-->
+    <!--    <div class="row">-->
+    <!--        <div class="col-sm-4 ">-->
+    <!--            <a href="senior.html">-->
+    <!--                    <img src="photos/parents.JPG" class="img-responsive" alt="Image">-->
+    <!--                    <div class="overlay">-->
+    <!--                        <h2>Seniors</h2>-->
+    <!--                    </div>-->
+    <!--            </a>-->
+    <!--        </div>-->
+    <!--        <div class="col-sm-4">-->
+    <!--            <a href="junior.html">-->
+    <!--                   <div class="panel-body"><img src="photo/junior.jpg" class="img-responsive" style="width:100%" alt="Image"></div>-->
+                        <!--<img src="photo/junior.jpg" class="img-responsive" alt="Image">-->
+                        <!--    <h2>Juniors</h2>-->
+    <!--            </a>-->
+    <!--        </div>-->
+    <!--         <div class="col-sm-4">-->
+    <!--            <a href="teacher.html">-->
+    <!--                 <div class="panel-body"><img src="photo/jesusteacher.png" class="img-responsive" style="width:100%" alt="Image"></div>-->
+                        <!--<img src="photos/IS.jpg" class="img-responsive" alt="Image">-->
+    <!--            </a>-->
+    <!--        </div>-->
+    <!--        <div class="col-sm-4">-->
+    <!--            <a href="alumni.html">-->
+    <!--                 <div class="panel-body"><img src="photo/alumi.jpg" class="img-responsive" style="width:100%" alt="Image"></div>-->
+    <!--            </a>-->
+    <!--        </div>-->
+
+    <!--        <div class="col-sm-4">-->
+    <!--            <a href="questions.html">-->
+    <!--            <div class="panel-body"><img src="photo/question.png" class="img-responsive" style="width:100%" alt="Image"></div>-->
+    <!--            </a>-->
+    <!--        </div>-->
+    <!--        <div class="col-sm-4">-->
+    <!--            <a href="financial_aids.html">-->
+    <!--              <div class="panel-body"><img src="photo/money.png" class="img-responsive" style="width:100%" alt="Image"></div>-->
+    <!--            </a>-->
+    <!--        </div>-->
+               
+    <!--    </div>-->
+    <!--</div>-->
+
+         <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Portfolio</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                    
+                                <h1>Hello</h1>
+                           
+                        </div>
+                        <img src="photo/gradhat.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/cake.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/circus.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/game.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/safe.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/submarine.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <footer class="container-fluid text-center" id="contact">
+            <div class="footer-col col-md-6">
+                <h3>Location</h3>
+                <p>350 67th St
+                    <br>Brooklyn, New York 11220</p>
+            </div>
+            <div class="footer-col col-md-6">
+                <h3>Contact</h3>
+               <a href="http://hstat.org">HSTAT School Webpage</a>
+               <p>Phone: (718) 759-3400</p>
+            </div>
+        </footer>
+  
+</body>
+
+</html>

@@ -1,0 +1,406 @@
+<!--//http://www.theprospect.net/wp-content/uploads/2015/10/Studying1.jpg-->
+<!--//https://community.uservoice.com/wp-content/uploads/customer-interview-questions-800x486.jpg-->
+<!--//https://www.robertwalters.co.jp/content/dam/robert-walters/global/images/article-images/meeting-with-tablet.jpg-->
+<!--//https://apps.carleton.edu/reason_package/reason_4.0/www/sized_images_local/set994/1101994/646cb1a42e2fa69049c8a2f768a879d1.jpg-->
+<!--//https://mathematica-mpr.com/-/media/internet/international-graphics-and-photos/international-photos/graduation-silhouette-630-315.jpg?w=250&useCustomFunctions=1&centerCrop=1-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="custom.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <style>
+        #font {
+            color: white;
+            font-size: 30px;
+        }
+        
+        p {
+            font-size: 18px;
+        }
+        
+        h1 {
+            color: white;
+            font-size: 20px;
+        }
+        
+        h2 {
+            font-size: 20px;
+        }
+        
+        .index-img {
+            width: 100%;
+            height: 250px;
+            opacity: 0.9;
+        }
+        
+        .hovereffect {
+            width: 100%;
+            height: 100%;
+            float: left;
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            cursor: default;
+        }
+        
+        .hovereffect .overlay {
+            position: absolute;
+            overflow: hidden;
+            width: 80%;
+            height: 80%;
+            left: 10%;
+            top: 10%;
+            border-bottom: 1px solid #FFF;
+            border-top: 1px solid #FFF;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s;
+            -webkit-transform: scale(0, 1);
+            -ms-transform: scale(0, 1);
+            transform: scale(0, 1);
+        }
+        
+        .hovereffect:hover .overlay {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+        }
+        
+        .hovereffect img {
+            display: block;
+            position: relative;
+            -webkit-transition: all 0.35s;
+            transition: all 0.35s;
+        }
+        
+        .hovereffect:hover img {
+            filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+            filter: brightness(0.6);
+            -webkit-filter: brightness(0.6);
+        }
+        
+        .hovereffect h2 {
+            text-transform: uppercase;
+            text-align: center;
+            position: relative;
+            font-size: 50px;
+            background-color: transparent;
+            color: #FFF;
+            padding: 1em 0;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s;
+            -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+        }
+        
+        .hovereffect a,
+        .hovereffect p {
+            color: #FFF;
+            padding: 1em 0;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s;
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+        }
+        
+        .hovereffect:hover a,
+        .hovereffect:hover p,
+        .hovereffect:hover h2 {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    </style>
+</head>
+<script>
+    function collapseNavbar() {
+        if ($(".navbar").offset().top > 50) {
+            $(".navbar-fixed-top").addClass("top-nav-collapse");
+        }
+        else {
+            $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        }
+    }
+
+    $(window).scroll(collapseNavbar);
+    $(document).ready(collapseNavbar);
+
+
+    // Closes the Responsive Menu on Menu Item Click
+    $('.navbar-collapse ul li a').click(function() {
+        if ($(this).attr('class') != 'dropdown-toggle active' && $(this).attr('class') != 'dropdown-toggle') {
+            $('.navbar-toggle:visible').click();
+        }
+    });
+
+
+    //dddd
+    $(window).scroll(function() {
+        $(".slideanim").each(function() {
+            var pos = $(this).offset().top;
+
+            var winTop = $(window).scrollTop();
+            if (pos < winTop + 600) {
+                $(this).addClass("slide");
+            }
+        });
+    });
+</script>
+
+<body id="page-top" class="index">
+
+
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                    <br>
+                    <a class="navbar-brand" href="#page-top" id="font">HSTAT College Office</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="index.html">Home</a>
+                        </li>
+                        <!--//-->
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Pages <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="senior.html">Senior</a></li>
+                                <li><a href="junior.html">Junior</a></li>
+                                <li><a href="teacher.html">Teacher</a></li>
+                                <li><a href="alumni.html">Alumni</a></li>
+                                <li><a href="questions.html">Question</a></li>
+                                <li><a href="financial_aid.html">Finacnial Aid</a></li>
+                            </ul>
+                        </li>
+
+                        <!--//    -->
+                        <li>
+                            <a class="page-scroll" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+
+
+
+
+        <header id="home_img">
+            <div class="header-content">
+                <div class="header-content-inner">
+                    <div class="container text-center">
+                        <h1>"In a twenty-first century economy where the most valuable skill you can sell is your knowledge, education is the single best bet we can make - not just for our individual success; but for the success of our nation as a whole."
+                            ~President Obama</h1>
+
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+<br>
+
+        <div class="container-fluid bg-3 text-center" id="middle">
+            <div class="row">
+
+
+
+
+                <!--<div class="col-sm-4 ">-->
+                <!--    <a href="senior.html">-->
+                <!--       <div class="panel-body"><img src="photo/grad5.jpg" class="index-img" class="img-responsive" style="width:100%" alt="Image">   </div>-->
+                <!--    </a>-->
+
+
+                <!--</div>-->
+
+
+                <div class="col-sm-4">
+                    <a href="senior.html">
+                        <div class="hovereffect">
+                            <div class="panel-body"><img src="photo/grad5.jpg" class="index-img" class="img-responsive" alt="Image">
+                                <div class="overlay" id="overlaytext">
+                                    <h2>SENIOR</h2>
+                                </div>
+                            </div>
+                    </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <a href="junior.html">
+                        <div class="hovereffect">
+                            <div class="panel-body"><img src="photo/book.jpg" class="index-img" class="img-responsive" alt="Image"></div>
+                            <div class="overlay" id="overlaytext">
+                                <h2>JUNIOR</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <!--<div class="col-sm-4">-->
+                <!--    <a href="junior.html">-->
+                <!--        <div class="panel-body"><img src="photo/book.jpg" class="index-img" class="img-responsive" style="width:100%" alt="Image"></div>-->
+
+                <!--    </a>-->
+                <!--</div>-->
+
+                <div class="col-sm-4">
+                    <a href="teacher.html">
+                        <div class="hovereffect">
+                            <div class="panel-body"><img src="photo/teaching.jpg" class="index-img" class="img-responsive" style="width:100%" alt="Image"></div>
+                            <div class="overlay" id="overlaytext">
+                                <h2>TEACHER</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <!--<div class="col-sm-4">-->
+                <!--    <a href="teacher.html">-->
+                <!--        <div class="panel-body"><img src="photo/teaching.jpg" class="index-img" class="img-responsive" style="width:100%" alt="Image"></div>-->
+                <!--<img src="photos/IS.jpg" class="img-responsive" alt="Image">-->
+                <!--    </a>-->
+                <!--</div>-->
+
+
+
+                <div class="col-sm-4">
+                    <a href="alumni.html">
+                        <div class="hovereffect">
+                            <div class="panel-body"><img src="photo/professional.jpg" class="index-img" class="img-responsive" style="width:100%" alt="Image"></div>
+                            <div class="overlay" id="overlaytext">
+                                <h2>ALUMNI</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+
+
+                <!--<div class="col-sm-4">-->
+                <!--    <a href="alumni.html">-->
+                <!--        <div class="panel-body"><img src="photo/professional.jpg" class="index-img" class="img-responsive" style="width:100%" alt="Image"></div>-->
+                <!--    </a>-->
+                <!--</div>-->
+
+                <div class="col-sm-4">
+                    <a href="questions.html">
+                        <div class="hovereffect">
+                            <div class="panel-body"><img src="photo/question.jpg" class="index-img" class="img-responsive" style="width:100%" alt="Image"></div>
+                            <div class="overlay" id="overlaytext">
+                                <h2>QUESTION</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!--<div class="col-sm-4">-->
+                <!--    <a href="questions.html">-->
+                <!--        <div class="panel-body"><img src="photo/question.jpg" class="index-img" class="img-responsive" style="width:100%" alt="Image"></div>-->
+                <!--    </a>-->
+                <!--</div>-->
+
+                <div class="col-sm-4">
+                    <a href="financial_aid.html">
+                        <div class="hovereffect">
+                            <div class="panel-body"><img src="photo/aid.jpg" class="index-img" class="img-responsive" style="width:100%" alt="Image"></div>
+                            <div class="overlay" id="overlaytext">
+                                <h2>FINANCIAL AID</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!--<div class="col-sm-4">-->
+                <!--    <a href="financial_aids.html">-->
+                <!--        <div class="panel-body"><img src="photo/aid.jpg" class="index-img" class="img-responsive" style="width:100%" alt="Image"></div>-->
+                <!--    </a>-->
+                <!--</div>-->
+            </div>
+        </div>
+
+
+
+        <div class="container-fluid bg-3 text-center" id="middle">
+            <div class="row">
+                <h2>School Informations:</h2>
+                <div class="col-sm-4">
+                    <p></p>The High School of Telecommunication Arts and Technology <br>College Office: Room 104 <br>Email: hstatcollegeoffice@gmail.com <br>CEEB code: 330743</p>
+                </div>
+                <div class="col-sm-4">
+                    </p>Eleanor Vierling College Advisor <br>Room 104 <br>718-759-3435 <br>hstatcollegeoffice@gmail.com</p>
+                </div>
+                <div class="col-sm-4">
+                    </p>Stacy Dumaresq College Advisor <br>Room 104 <br>718-759-3441 <br>hstatcollegeoffice@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <footer class="container-fluid text-center" id="contact">
+            <div class="footer-col col-md-6">
+                <h3>Location</h3>
+                <p>350 67th St
+                    <br>Brooklyn, New York 11220</p>
+            </div>
+            <div class="footer-col col-md-6">
+                <h3>Contact</h3>
+                <a href="http://hstat.org">HSTAT School Webpage</a>
+                <p>Phone: (718) 759-3400</p>
+            </div>
+        </footer>
+
+    </body>
+
+</html>
